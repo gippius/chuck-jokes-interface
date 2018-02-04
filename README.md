@@ -1,33 +1,40 @@
-## Сборка на локальной машине:
+# Interface for API https://jokes.marwyntwelve.com
 
-* Открыть корневой каталог
+## Running locally:
+
 * npm install
 * npm run build
-* Запустить /dist/index.html
+* Launch /dist/index.html
 
-## Готовое демо онлайн:
+## Working online demo:
 
 https://jokes.marwyntwelve.com/
 
-## Краткая документация
+## Short documentation
 
-Файлы header__nav и section__* - классы, содержащие в себе html разных блоков
-страниц и относящийся к ним js-код. 
-http.js - обертка для http-запросов со встроенным кэшированием.
-storage.js - класс для работы с localStorage (используется для кэширования в 
+Files __header__nav__ и __section__*__ have classes inside them, which contain 
+HTML of corresponding sections and all related JS code.
+
+__http.js__ is a http-request wrapped together with caching mechanism.
+__storage.js__ - класс для работы с localStorage (используется для кэширования в 
 http.js)
 
-Точка входа - app.js. При запуске приложение создает по одному экземпляру класса
-для каждой секции, используя входящие параметры.
+Entry point is __app.js__. After launch app creates one exemplar for each section
+class, using incoming parameters.
 
-Использован ванильный JS, CSS, для сборки JS-файлов в бандл - Webpack. При сборке
-используется babel-polyfills.
+The project is made with vanilla JS and CSS. JS-files are packed in bundle with
+Webpack, which uses __babel-polyfills module__.
 
-## Кэширование
+## Caching
 
-Реализовано при помощи сохранения пар "нужный URL: ответ" в localStorage.
-Перед тем, как отправить запрос, http.js проверяет, нет ли уже сохраненного
-ответа для этого URL, и, если есть, сразу возвращает его.
+There is selecting caching built-in inside requests in __http.js__, data is
+stored in "URL: response" format inside localStorage.
 
-Учитывая невозможность сделать запрос конкретных шуток, кэшируются только
-запросы раздела search.
+Before sending actual request, __http.js__ checks if there is any response
+cached for this URL, and if it is, returns it immediately.
+
+Only section which requests are cached is __Feed Section__.
+
+## Search section
+
+__Search section__ isn't working because API doesn't have corresponding method working.
