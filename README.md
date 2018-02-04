@@ -4,7 +4,7 @@
 
 * npm install
 * npm run build
-* Launch /dist/index.html
+* Open /dist/index.html
 
 ## Working online demo:
 
