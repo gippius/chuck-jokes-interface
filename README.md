@@ -33,7 +33,7 @@ stored in "URL: response" format inside localStorage.
 Before sending actual request, __http.js__ checks if there is any response
 cached for this URL, and if it is, returns it immediately.
 
-Only section which requests are cached is __Search Section__.
+The only section which requests are cached is __Search Section__.
 
 ## Search section
 
