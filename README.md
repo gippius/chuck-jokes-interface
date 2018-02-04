@@ -1,3 +1,10 @@
+## Сборка на локальной машине:
+
+* Открыть корневой каталог
+* npm install
+* npm run build
+* Запустить /dist/index.html
+
 ## Готовое демо онлайн:
 
 https://jokes.marwyntwelve.com/
