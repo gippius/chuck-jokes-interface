@@ -16,6 +16,7 @@ Files __header__nav__ и __section__*__ have classes inside them, which contain
 HTML of corresponding sections and all related JS code.
 
 __http.js__ is a http-request wrapped together with caching mechanism.
+
 __storage.js__ - class for working with localStorage methods. Used in __http.js__.
 
 Entry point is __app.js__. After launch app creates one exemplar for each section
