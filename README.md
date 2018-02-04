@@ -37,4 +37,4 @@ The only section which requests are cached is __Search Section__.
 
 ## Search section
 
-__Search section__ isn't working because API doesn't have corresponding method working.
+__Section_by_id__ isn't working because API doesn't have corresponding method working.
