@@ -1,0 +1,312 @@
+*
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+body,
+main,
+nav,
+section,
+div,
+button
+{
+    display: flex;
+}
+
+html
+{
+    overflow-y: scroll;
+}
+
+body
+{
+    margin: 0;
+
+    flex-flow: column nowrap;
+}
+
+/* navigation header styles start */
+
+.nav
+{
+    flex-basis: 80px;
+    align-items: stretch;
+    flex-flow: row nowrap;
+}
+
+.nav__menu_item
+{
+    cursor: pointer;
+    user-select: none;
+
+    background-color: #ffecb3;
+
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav__menu_item:hover
+{
+    background-color: #ffe082;
+}
+
+.nav__menu_item.selected
+{
+    background-color: #ffd54f;
+}
+
+/* navigation header styles end */
+
+
+/* main section styles start */
+
+.main_section__hint
+{
+    align-self: center;
+}
+
+.section__joke_avatar_wrap
+{
+    flex-flow: column nowrap;
+}
+
+.section__chuck_avatar
+{
+    min-width: 60px;
+    min-height: 60px;
+
+    /* flex-shrink: 0; */
+}
+
+.section__joke_text
+{
+    padding-left: 5px;
+
+    cursor: default;
+}
+
+.main_sections__wrap
+{
+    overflow-y: visible;
+
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.main_section
+{
+    display: flex;
+    min-height: 60%;
+    margin-top: 32px;
+
+    flex-flow: column nowrap;
+    flex-basis: 70%;
+    align-items: stretch;
+}
+
+.main_section__hint
+{
+    margin: 32px 0;
+}
+
+.section__output_container
+{
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+
+.section__joke-block
+{
+    align-items: center;
+
+    font-size: 14px;
+
+    margin: 5px 0;
+    padding: 8px;
+
+    cursor: default;
+
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px #d8d8d8;
+}
+
+.section__joke_block:hover
+{
+    transition-duration: .2s;
+
+    box-shadow: 4px 4px 5px #d8d8d8;
+}
+
+.section__joke_text
+{
+    word-break: break-word;
+    -ms-word-break: break-all; 
+}
+
+.sections__error_message
+{
+    font-size: 14px;
+
+    margin: 5px 0;
+    padding: 8px;
+
+    cursor: default;
+
+    border: 1px solid #ff9191;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px #ffc7c7;
+}
+
+.sections__error_message:hover
+{
+    box-shadow: 2px 2px 3px #ff9494;
+}
+
+/* common main section CSS end */
+
+
+/* random joke section start*/
+
+.section_random__button
+{
+    font-size: 16px;
+
+    margin: 32px auto;
+    padding: 16px 64px;
+
+    align-self: center;
+}
+
+.section_random__joke-block{
+    align-self: center;
+}
+
+/* random joke section end */
+
+
+/* get-by-id section style start */
+
+.section__by_id__controls
+{
+    margin: 30px 0;
+
+    align-self: stretch;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.section_by_id__input
+{
+    padding: 8px;
+
+    resize: none;
+    transition: 700ms;
+
+    border: 1px solid #a9a9a9;
+    border-radius: 3px;
+    outline: none;
+
+    flex-basis: 80%;
+    align-self: center;
+}
+
+.section_by_id__input.error
+{
+    transition: 500ms;
+
+    border-color: red;
+}
+
+.section_by_id__button
+{
+    font-size: 16px;
+
+    margin: 32px auto;
+    padding: 16px 64px;
+
+    align-self: center;
+}
+
+/* get-by-id section style end */
+
+
+/* search section style start */
+
+.section__search__controls
+{
+    margin: 30px 0;
+
+    align-self: stretch;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.section_search__input
+{
+    margin-right: 32px;
+    padding: 8px;
+
+    resize: none;
+    transition: 700ms;
+
+    border: 1px solid #a9a9a9;
+    border-radius: 3px;
+    outline: none;
+
+    flex-basis: 60%;
+}
+
+.section_search__input.error
+{
+    transition: 500ms;
+
+    border-color: red;
+}
+
+.section_search__select
+{
+    padding: 4px;
+
+    border: 1px solid #a9a9a9;
+    border-radius: 3px;
+}
+
+/* search section style end */
+
+
+/* jokes feed section styles start */
+
+.section__feed__wrap
+{
+    flex-grow: 1;
+    flex-flow: column nowrap;
+}
+
+/* jokes feed section styles end */
+
+
+/* common buttons styles class */
+
+.fl_button
+{
+    cursor: pointer;
+
+    border: 2px solid #ffa000;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+}
+
+.fl_button:hover
+{
+    box-shadow: 4px 4px 5px #ffc107;
+}
+
+.fl_button:active
+{
+    box-shadow: 2px 2px 3px #ffc107;
+}
+
+/* common buttons styles class end */
