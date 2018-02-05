@@ -1,4 +1,4 @@
-# Interface for API https://jokes.marwyntwelve.com
+# Interface for API https://api.chucknorris.io
 
 ## Running locally:
 
