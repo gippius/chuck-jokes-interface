@@ -1,5 +1,9 @@
 # Interface for API https://api.chucknorris.io
 
+## What is used
+
+Vanilla JS, Webpack + babel.
+
 ## Running locally:
 
 * npm install
